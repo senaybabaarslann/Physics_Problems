@@ -80,33 +80,12 @@ c) What is the magnitude and direction of the force acting on the particle?
 
 d) What is the work done by the force acting on the particle between points $(a,0)$ and $(0, b)$?
 
+
 ## 14. Dynamics IV
-
-A man of mass $m$ stands on the floor of a detached elevator falling with acceleration $a$. Determine the force he exerts on the elevator floor.
-
-## 15. Dynamics V
-
-Explain why an astronaut in a spacecraft with engines turned off is in a state of weightlessness.
-
-## 16. Dynamics VI
-
-A tram consists of two cars with masses $m_1$ and $m_2$, of which only the first one has an engine. The friction force acting on the wheels of the motor car is equal to $T$. With what force does the motor car pull the second car?
-
-## 17. Dynamics VII
-
-In a train moving:
-
-a) with constant velocity $v$;
-
-b) with constant acceleration $a$,
-
-a mass $m$ hangs on a string. What is the deviation of the string from the vertical?
-
-## 18. Dynamics VIII
 
 A ping-pong ball loses $1/k$ fraction of its kinetic energy after hitting the floor. Find the total distance the ball will travel when dropped from a height $h$ until it stops. Coefficient $k>1$.
 
-## 19. Dynamics IX
+## 15. Dynamics V
 
 A stone of mass $m$ was thrown with velocity $v_0$ into a well where the water level is at depth $d$. Assume that the stone falls freely in the air, while in the water, a resistance force proportional to velocity acts on it:
 
@@ -116,11 +95,7 @@ $$
 
 Find the dependence of the stone's position, velocity, and acceleration on time.
 
-## 20. Dynamics X
-
-Following the stone from the previous problem, a second stone of the same mass and with the same velocity was thrown into the well after time $T$. What will be the time dependence of the distance $D$ between the stones?
-
-## 21. Dynamics XI
+## 16. Dynamics VI
 
 A ball of mass $m$ was thrown vertically upwards with velocity $v_0$. The air resistance force acting on the ball is given by the formula:
 
@@ -130,16 +105,6 @@ $$
 
 Find the equation of motion of the ball, the time of flight to the highest point of the trajectory, and the position of this point.
 
-## 22. Dynamics XII
+## 17. Dynamics VII
 
 Solve the problem of projectile motion in a gravitational field when a resistance force proportional to velocity acts on the moving body. Find the equations of motion, the maximum height, and the time to reach it. Discuss the case when the resistance force is much smaller than the body's weight.
-
-## 23. Dynamics XIII
-
-A small ball of mass $m$ slides without friction down the surface of a sphere of radius $R$. At what point and with what velocity will the ball detach from the sphere?
-
-## 24. Dynamics XIV
-
-Find the solution to the previous problem in the case where the ball starts from the top of the sphere with a velocity $v_0 \neq 0$.
-
-Note. The cases $v_0 \le \sqrt{gR}$ and $v_0 > \sqrt{gR}$ should be discussed separately.
