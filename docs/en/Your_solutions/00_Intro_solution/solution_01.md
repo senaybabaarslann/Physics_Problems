@@ -1,19 +1,31 @@
-1. VECTOR ALGEBRA
-Problem: Given a = [2, 1, -3] and b = [4, -2, 1]
-"""
-# Step 1: Calculate Magnitudes using sqrt(x^2 + y^2 + z^2)
-# |a| = sqrt(2^2 + 1^2 + (-3)^2) = sqrt(14) ≈ 3.74
-# |b| = sqrt(4^2 + (-2)^2 + 1^2) = sqrt(21) ≈ 4.58
+## 1. Vector Algebra
+**Given:** $\vec{a} = [2, 1, -3]$ and $\vec{b} = [4, -2, 1]$
 
-# Step 2: Dot Product (a . b)
-# a . b = (2*4) + (1*-2) + (-3*1) = 8 - 2 - 3 = 3
+### a) Magnitude of Vector a
+$$|\vec{a}| = \sqrt{2^2 + 1^2 + (-3)^2} = \sqrt{4 + 1 + 9} = \sqrt{14}$$
 
-# Step 3: Cross Product (a x b) using determinant
-# i = (1*1) - (-3*-2) = -5
-# j = ((-3)*4) - (2*1) = -14
-# k = (2*-2) - (1*4) = -8
-# Result: [-5, -14, -8]
+### b) Magnitude of Vector b
+$$|\vec{b}| = \sqrt{4^2 + (-2)^2 + 1^2} = \sqrt{16 + 4 + 1} = \sqrt{21}$$
 
-# Step 4: Angle (theta)
-# cos(theta) = (a.b) / (|a|*|b|) = 3 / (3.74 * 4.58) ≈ 0.175
-# theta = arccos(0.175) ≈ 79.9 degrees
+### c) Dot Product
+$$\vec{a} \cdot \vec{b} = (2 \times 4) + (1 \times -2) + (-3 \times 1) = 8 - 2 - 3 = 3$$
+
+### d) Cross Product
+$$
+\vec{a} \times \vec{b} = 
+\begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+2 & 1 & -3 \\
+4 & -2 & 1
+\end{vmatrix}
+$$
+
+* **i component:** $(1 \times 1) - (-3 \times -2) = 1 - 6 = -5$
+* **j component:** $-((2 \times 1) - (-3 \times 4)) = -(2 + 12) = -14$
+* **k component:** $(2 \times -2) - (1 \times 4) = -4 - 4 = -8$
+
+**Result Vector:** $[-5, -14, -8]$
+
+### e) Angle Calculation ($\theta$)
+$$\cos(\theta) = \frac{\vec{a} \cdot \vec{b}}{|\vec{a}| \cdot |\vec{b}|} = \frac{3}{\sqrt{14} \cdot \sqrt{21}} \approx 0.175$$
+$$\theta = \arccos(0.175) \approx 79.9^\circ$$
