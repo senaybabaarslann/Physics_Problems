@@ -1,13 +1,19 @@
-## 6. Variable Velocity
-**Problem:** Find position and acceleration at $t=3$ for $v(t) = t^2 + 2t - 5$ with $x(0)=4$.
+1. VECTOR ALGEBRA
+Problem: Given a = [2, 1, -3] and b = [4, -2, 1]
+"""
+# Step 1: Calculate Magnitudes using sqrt(x^2 + y^2 + z^2)
+# |a| = sqrt(2^2 + 1^2 + (-3)^2) = sqrt(14) ≈ 3.74
+# |b| = sqrt(4^2 + (-2)^2 + 1^2) = sqrt(21) ≈ 4.58
 
-* **Step 1: Integration for Position**
-  $x(t) = \int (t^2 + 2t - 5) dt = \frac{t^3}{3} + t^2 - 5t + C$
-* **Step 2: Solving for Constant C**
-  Given $x(0) = 4$, then $0 + 0 - 0 + C = 4 \Rightarrow C = 4$.
-  $x(t) = \frac{t^3}{3} + t^2 - 5t + 4$
-* **Step 3: Position at $t=3$**
-  $x(3) = \frac{3^3}{3} + 3^2 - 5(3) + 4 = 9 + 9 - 15 + 4 = 7$
-* **Step 4: Acceleration at $t=3$**
-  $a(t) = \frac{dv}{dt} = 2t + 2$
-  $a(3) = 2(3) + 2 = 8 \text{ m/s}^2$
+# Step 2: Dot Product (a . b)
+# a . b = (2*4) + (1*-2) + (-3*1) = 8 - 2 - 3 = 3
+
+# Step 3: Cross Product (a x b) using determinant
+# i = (1*1) - (-3*-2) = -5
+# j = ((-3)*4) - (2*1) = -14
+# k = (2*-2) - (1*4) = -8
+# Result: [-5, -14, -8]
+
+# Step 4: Angle (theta)
+# cos(theta) = (a.b) / (|a|*|b|) = 3 / (3.74 * 4.58) ≈ 0.175
+# theta = arccos(0.175) ≈ 79.9 degrees
