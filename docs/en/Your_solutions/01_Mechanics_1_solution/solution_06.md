@@ -1,117 +1,70 @@
-# Problem 6: Variable Velocity
+# Task 06 – Variable Velocity
 
-We are given the velocity function $v(t)=t^2+2t-5$ and the initial position $x(0)=4$.
+## Problem Statement
 
-We want:
+An object's velocity is given by $v(t) = t^2 + 2t - 5$. If the object was at $x=4$ at $t=0$, what is its position and acceleration at time $t=3$?
 
-1. The position at $t=3$, i.e. $x(3)$.
-2. The acceleration at $t=3$, i.e. $a(3)$.
+## Theory
 
----
-
-## 1) Position from velocity theory
-
-Velocity is the derivative of position:
+Position $x(t)$ is found by integrating velocity:
 
 $$
-v(t)=\frac{dx}{dt}
+x(t) = x_0 + \int_{0}^{t} v(\tau) d\tau
 $$
 
-So:
+Acceleration $a(t)$ is the derivative of velocity:
 
 $$
-\frac{dx}{dt}=t^2+2t-5
+a(t) = \frac{dv}{dt}
 $$
 
-Integrate both sides with respect to $t$:
+## Step-by-Step Solution
+
+### 1. Position at $t=3$
+
+First, find the general expression for $x(t)$:
 
 $$
-x(t)=\int (t^2+2t-5)\,dt
-$$
-
-Compute the integral term-by-term:
-
-$$
-\int t^2\,dt=\frac{t^3}{3},\qquad
-\int 2t\,dt=t^2,\qquad
-\int (-5)\,dt=-5t
-$$
-
-So the general position function is:
-
-$$
-x(t)=\frac{t^3}{3}+t^2-5t+C
-$$
-
-Use the initial condition $x(0)=4$:
-
-$$
-x(0)=\frac{0^3}{3}+0^2-5\cdot 0 + C = C = 4
-$$
-
-Therefore:
-
-$$
-x(t)=\frac{t^3}{3}+t^2-5t+4
-$$
-
-Now evaluate at $t=3$:
-
-$$
-x(3)=\frac{3^3}{3}+3^2-5\cdot 3+4
-=\frac{27}{3}+9-15+4
-=9+9-15+4
-$$
-
-Compute:
-$$
-9+9=18,\qquad 18-15=3,\qquad 3+4=7
-$$
-
-So:
-
-$$
-x(3)=7
-$$
-
----
-
-## 2) Acceleration from velocity
-
-Acceleration is the derivative of velocity:
-
-$$
-a(t)=\frac{dv}{dt}
-$$
-
-Differentiate:
-
-$$
-v(t)=t^2+2t-5
-\quad\Rightarrow\quad
-a(t)=2t+2
-$$
-
-Evaluate at $t=3$:
-
-$$
-a(3)=2\cdot 3 + 2 = 8
-$$
-
----
-
-## Final answers
-
-$$
-x(3)=7
+x(t) = 4 + \int_{0}^{t} (\tau^2 + 2\tau - 5) d\tau
 $$
 
 $$
-a(3)=8
+x(t) = 4 + \left[ \frac{1}{3}\tau^3 + \tau^2 - 5\tau \right]_{0}^{t}
 $$
 
----
+$$
+x(t) = \frac{1}{3}t^3 + t^2 - 5t + 4
+$$
 
-## Plot the velocity and acceleration
+Evaluating at $t=3$:
 
-![Velocity and Acceleration Plots](velocity_acceleration_plots.png)
+$$
+x(3) = \frac{1}{3}(3)^3 + (3)^2 - 5(3) + 4
+$$
+
+$$
+x(3) = 9 + 9 - 15 + 4 = 7
+$$
+
+### 2. Acceleration at $t=3$
+
+Differentiating $v(t)$:
+
+$$
+a(t) = \frac{d}{dt}(t^2 + 2t - 5) = 2t + 2
+$$
+
+Evaluating at $t=3$:
+
+$$
+a(3) = 2(3) + 2 = 8
+$$
+
+## Final Result
+
+* **Position at $t=3$:** $x = 7$
+* **Acceleration at $t=3$:** $a = 8$
+
+## Interpretation
+
+The velocity is a quadratic function of time, implying that the acceleration is not constant but increases linearly. By integrating, we found the cubic displacement function.
